@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>zee photography</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                 <a href="index.html">Home</a>
+                </div> 
+               
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+                 <div class="nav-link-wrapper">
+                      <a href="gallery.html">Project</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="contact.html">Contact</a>
+                </div>
+              
+
+            </div>
+            <div class="right-side">
+                <div class="brand">
+                   ZAIN-UL-ABIDEEN
+                </div>
+
+
+             </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+            
+            <div class="portfolio-item-wrapper">
+                <div class="potfolio-img-background" style="background-image: url(images/natureimg.jpg);"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/zlogo.jpg" alt="">
+                    </div>
+                    <div class="subtitle">
+                        I love to capture thrill of nature!
+                    </div>
+                </div>
+            </div>   
+            <div class="portfolio-item-wrapper">
+                <div class="potfolio-img-background" style="background-image: url(images/sportsimg.jpg);"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/zlogo.jpg" alt="">
+                    </div>
+                    <div class="subtitle">
+                        you goal and can't store, being a sportslover i will loved to do this
+                    </div>
+                </div>
+            </div>   
+            <div class="portfolio-item-wrapper">
+                <div class="potfolio-img-background" style="background-image: url(images/weddingsimg.jpg);"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/zlogo.jpg" alt="">
+                    </div>
+                    <div class="subtitle">
+                        weddings are the most important event of life, with my skills let made your event more loveable to remember
+                    </div>
+                </div>
+            </div>   
+            <div class="portfolio-item-wrapper">
+                <div class="potfolio-img-background" style="background-image: url(images/foodima.jpg);"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/zlogo.jpg" alt="">
+                    </div>
+                    <div class="subtitle">
+                         a food blogger must need perfect angle photos to make reader mouthwatering looks and read your article contact me then!
+                    </div>
+                </div>
+            </div>   
+            <div class="portfolio-item-wrapper">
+                <div class="potfolio-img-background" style="background-image: url(images/candidima_n.jpg);"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/zlogo.jpg" alt="">
+                    </div>
+                    <div class="subtitle">
+                       candid moments are the blissful moments to capture , contact me for your event to memorize them 
+                    </div>
+                </div>
+            </div>   
+            <div class="portfolio-item-wrapper">
+                <div class="potfolio-img-background" style="background-image: url(images/placesimg.jpg);"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/zlogo.jpg" alt="">
+                    </div>
+                    <div class="subtitle">
+                     you are a tourist ! then enjoy your trip , am here to capture beautiful sights for you     
+                    </div>
+                </div>
+            </div>   
+            
+             
+        </div>
+
+    </div>
+
+    
+</body>
+<script>
+   
+   const PortfolioItem = document.querySelectorAll('.portfolio-item-wrapper')
+
+   PortfolioItem.forEach(PortfolioItem => {
+          PortfolioItem.addEventListener("mouseover", () => {
+            console.log(PortfolioItem.childNodes[1].classList);
+            PortfolioItem.childNodes[1].classList.add('img-darken');
+          })
+
+          PortfolioItem.addEventListener("mouseout", () => {
+            console.log(PortfolioItem.childNodes[1].classList);
+            PortfolioItem.childNodes[1].classList.remove('img-darken');
+          })
+
+   })
+</script>
+</html>
